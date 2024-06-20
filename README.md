@@ -21,13 +21,23 @@ _____
 Чтобы проект корректно заработал на вашем ПК необходимо: 
 1. Клонировать проект себе в репозиторий и локально на ПК
 ```
-git@github.com:Meatdam/YouTube_from_database_parser.git
+git clone git@github.com:Meatdam/bank_operations.git
 ```
-2. Установить все зависимости к себе на ПК с файла 'requirements.txt'
+2. Установить виртуальное окружение `venv`
+```
+python3 -m venv venv для MacOS и Linux систем
+python -m venv venv для windows
+```
+3. Активировать виртуальное окружение
+```
+source venv/bin/activate для MasOs и Linux систем
+venv\Scripts\activate.bat для windows
+```
+4. установить файл с зависимостями
 ```
 pip install -r requirements.txt
 ```
-3. Заполнить корректно в файле 'database.ini', данными с вашей БД в переменную
+5. Заполнить корректно в файле 'database.ini', данными с вашей БД в переменную
 ```
 host=<localhost> как правило 
 user=<ваше имя зарегестрированного в postgreSQL>
@@ -36,5 +46,5 @@ port=<5432> как правило
 ```
 Название БД которуй вы захотите создать у себя локально можно прописать в файле 'main.py' в 'create_database'. По умолчанию название задано 'youtube'
 
-Автор проекта:
+Автор проекта:<br>
 [Кузькин Илья](https://github.com/Meatdam)
