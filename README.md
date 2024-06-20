@@ -21,7 +21,7 @@ _____
 Чтобы проект корректно заработал на вашем ПК необходимо: 
 1. Клонировать проект себе в репозиторий и локально на ПК
 ```
-git clone git@github.com:Meatdam/bank_operations.git
+git@github.com:Meatdam/YouTube_from_database_parser.git
 ```
 2. Установить виртуальное окружение `venv`
 ```
